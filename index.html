@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Times;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: #ffffff;
+    line-height: 1.5;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 0px;
+    background: white;
+}
+
+.nav {
+    padding: 10px;
+    font-size: 30px;
+    background: white;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.center {   
+    float: right;
+    width: 75%;
+}
+
+/* Right column */
+
+.leftcolumn {
+    float: right;
+    width: 25%;
+    padding-right: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: normal;
+	margin-top:20px;
+  	margin-bottom:10px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: normal;
+	margin-top:20px;
+  	margin-bottom:10px;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: normal;
+	margin-top:20px;
+  	margin-bottom:10px;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+a:link {
+	color: blue;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+a:active {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tobias Renkin</h1>
+</div>
+
+<div class="nav">
+  <a href=''>About me</a> &nbsp; &nbsp; &nbsp; <a href=''>Research</a> &nbsp; &nbsp; &nbsp;  <a href=''>CV</a>
+</div>
+
+<div class="row">
+  <div class="center">
+  	<h3>About</h3>
+
+	I am an economist at the Research Department of Danmarks Nationalbank and a research affiliate at IZA. My research interests are applied Macroeconomics and Labor Economics. Before joining Danmarks Nationalbank, I did my Ph.D. studies at the University of Zurich. You can find an overview of my research projects here, and my CV here.<p />
+
+	In my Job Market Paper "The Pass-Through of Minimum Wages into US Retail Prices: Evidence from Supermarket Scanner Data", I study the response of grocery stores' prices to increases in minimum wages. In other ongoing projects, I analyze exchange rate pass-through and manufacturing employment dynamics after the Swiss franc shock of 2015, the relationship between labor cost and automation in the US retail industry, and the response of retail prices to demand shocks during the great recession.
+
+  </div>
+
+  <div class="leftcolumn">
+    <div class="card">
+      <img src='DSC_3434_small.jpg'>
+
+      <h3>Contact</h3>
+      Tobias Renkin<br>
+      Danmarks Nationalbank<br>
+      Havnegade 5<br>
+      DK-1093 Copenhagen K<br>
+      tobias.renkin@gmail.com<br>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Disclaimer: Materials on this website are personal and do not reflect the positions and opinions of Danmarks Nationalbank.
+</div>
+
+</body>
+</html>
