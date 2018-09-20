@@ -1,161 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-    font-family: Times;
-    padding-left: 20%;
-    padding-right: 20%;
-    background: #ffffff;
-    line-height: 1.5;
-}
-
-/* Header/Blog Title */
-.header {
-    padding: 0px;
-    background: white;
-}
-
-.nav {
-    padding: 10px;
-    font-size: 30px;
-    background: white;
-}
-
-
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.center {   
-    float: right;
-    width: 75%;
-}
-
-/* Right column */
-
-.leftcolumn {
-    float: right;
-    width: 25%;
-    padding-right: 20px;
-}
-
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-h1 {
-	font-size: 60px;
-	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
-}
-
-h2 {
-	font-size: 40px;
-	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
-}
-
-h3 {
-	font-size: 35px;
-	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
-}
-
-h4 {
-	font-size: 20px;
-	font-weight: normal;
-}
-
-a:link {
-	color: blue;
-}
-a:visited {
-	color: blue;
-}
-a:hover {
-	color: blue;
-	text-decoration: underline;
-}
-a:active {
-	color: blue;
-	text-decoration: underline;
-}
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tobias Renkin's website</title>
 </head>
+
 <body>
-
-<div class="header">
-  <h1>Tobias Renkin</h1>
-</div>
-
-<div class="nav">
-  <a href=''>About me</a> &nbsp; &nbsp; &nbsp; <a href=''>Research</a> &nbsp; &nbsp; &nbsp;  <a href=''>CV</a>
-</div>
-
 <div class="row">
-  <div class="center">
-  	<h3>About</h3>
-
-	I am an economist at the Research Department of Danmarks Nationalbank and a research affiliate at IZA. My research interests are applied Macroeconomics and Labor Economics. Before joining Danmarks Nationalbank, I did my Ph.D. studies at the University of Zurich. You can find an overview of my research projects here, and my CV here.<p />
-
-	In my Job Market Paper "The Pass-Through of Minimum Wages into US Retail Prices: Evidence from Supermarket Scanner Data", I study the response of grocery stores' prices to increases in minimum wages. In other ongoing projects, I analyze exchange rate pass-through and manufacturing employment dynamics after the Swiss franc shock of 2015, the relationship between labor cost and automation in the US retail industry, and the response of retail prices to demand shocks during the great recession.
-
+  <div class="header" style='margin-bottom:25px'>
+      <span style='font-size:60px'>Tobias Renkin</span><br>
+      Research Economist, Danmarks Nationalbank
   </div>
 
+  <div class="center">
+  <!--- EDIT HERE -->
+  
+  I am a Research Economist at <a href='http://www.nationalbanken.dk/en/research/Pages/default.aspx'>Danmarks Nationalbank</a>. I am interested in empirical Macroeconomics and Labor Economics. You can find an overview over my research projects below.
+
+  <br>
+
+
+  <h4>Working Papers</h4>
+
+  <p>
+  <b>1. <a href="https://www.dropbox.com/s/587cigqp57dyt3n/tobias_renkin_JMP.pdf?dl=1">The Pass-Through of Minimum Wages into US Retail Prices: Evidence from Supermarket Scanner Data</a></b>, with <a href='http://www.clairemontialoux.com'>Claire Montialoux</a> and <a href="https://sites.google.com/site/siegenthalermichael/home">Michael Siegenthaler</a>
+  <p/>
+  We study the impact of increases in local minimum wages on the dynamics of prices in local grocery stores in the US during the 2001–2012 period. We find a significant impact of increasing minimum wages on prices in grocery stores. Our baseline estimate of the minimum wage elasticity of grocery prices is 0.02. This magnitude is consistent with a full pass-through of cost increases into prices. We show that price adjustments occur mostly in the months following the passage of minimum wage legislation rather than at the actual implementation of higher minimum wages. This forward-looking pattern of price adjustments is qualitatively consistent with price-setting models that feature nominal rigidities. We find no differential price effect for products consumed by poorer and richer households, and no evidence for demand effects. Our results suggest that consumers rather than firms bear the cost of minimum wage increases. Moreover, poor households are most negatively affected by the price response. Price increases in grocery stores alone offset at least 10% of the nominal income gains of the poorest households.
+  <p/>
+  Media coverage: <a href="http://marginalrevolution.com/marginalrevolution/2017/12/pass-minimum-wages-u-s-retail-prices.html">Marginal Revolution</a>, <a href="https://www.nationalaffairs.com/blog/detail/findings-a-daily-roundup/jobs-jobs-jobs">National Affairs Findings Blog</a>
+  </p>
+
+  <h4>Research in Progress</h4>
+
+  <p>
+  <b>2. Exchange Rates and Manufacturing Employment</b>, with <a href='https://www.dankaufmann.com/'>Daniel Kaufmann</a>
+  <p/>
+  We study the employment response of Swiss manufacturing firms to an unexpected and permanent appreciation of the Swiss Franc by about 10% in January 2015. We use an original identification strategy that is particularly suited to a small open economy such as Switzerland, where most firms face intense international competition either in export markets or through import competition. Instead of relying on variation in export exposure within Switzerland, we match Swiss firms with a control group of similar firms in neighboring Austria. We find that prior to the appreciation, employment in Austrian and Swiss firms co-moves closely. Employment in Swiss firms drops immediately after the appreciation, while it remains on a stable trend in Austria. Relative to the counterfactual of a constant exchange rate, the appreciation reduces firms' employment by 4% on average. The effects are more pronounced for larger firms and firms that grew strongly before the appreciation. In contrast, we find no effects on small firms. Preliminary results suggest that the employment decline in Swiss firms is driven by a decrease in hiring rather than layoffs. We plan to extend our data to include wages and aim to relate the employment response to stickiness of nominal wages.
+  </p>
+
+  <p>
+  <b>3. Exchange Rate Pass-Through and Price-Setting after a Large Appreciation</b>, with <a href="https://www.dankaufmann.com/">Daniel Kaufmann</a>
+  <p/>
+  We use a novel data set of linked import, export and domestic prices to study firms' exchange rate pass-through after an unexpected and permanent appreciation of the Swiss Franc by about 10% in January 2015. We find low pass-through for firms pricing their product in domestic currency (CHF) and much larger pass-through rates for firms that price their products in foreign currency (EUR). The differences persist even when conditioning on price changes and last until the end of the sample period two years after the appreciation. Our price data allows us to study the relationship between export, domestic and import prices in detail at the firm level. We find that export prices are closely linked to domestic prices when both are set in domestic currency, but not when the export price is set in foreign currency. Moreover, we find that exchange rate pass-through of firms that set prices in domestic currency can be fully explained by variation in import prices, suggesting that strategic complementary with prices of foreign competitors is low. For firms who set prices in foreign currency, strategic complementary appears to be more important.
+  </p>
+
+  <p>
+  <b>4. Do Retail Prices Respond To Cyclical Demand Shocks?</b>
+  <p/>
+  During recessions, consumers reduce their consumption of different products depending on the decline in their income and the income elasticity of demand of a product. Importantly, the income elasticity of demand varies between products. In this paper, I use variation in the income elasticity of market demand to identify how prices of products sold in US grocery stores respond to demand shocks. I use retail scanner data that covers prices and quantities of products sold in US grocery stores. My results suggest that the price response to a positive cyclical demand shock is zero or negative. The results are in line with theories that feature countercyclical markups.
+  </p>
+
+  <h4>Policy Report</h4>
+  <p>
+  <b><a href="https://www.seco.admin.ch/seco/de/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/Strukturwandel_Wachstum/Strukturwandel/seco_strukturberichtersmanufacturing-prices-and-employment-after.html">Manufacturing Prices and Employment after the Swiss Franc Shock</a></b>
+  Study on behalf of the State Secretariat for Economic Affairs SECO, October 2017, with <a href="https://www.dankaufmann.com/">Daniel Kaufmann</a><br>
+  </p>
+  Media coverage: <a href="https://www.nzz.ch/wirtschaft/was-der-franken-schock-gekostet-hat-ld.1323901">Neue Zürcher Zeitung I</a>, <a href="https://www.nzz.ch/wirtschaft/wie-der-franken-schock-die-schweizer-wirtschaft-umgekrempelt-hat-ld.1323763">Neue Zürcher Zeitung II</a>, <a href="https://www.tagesanzeiger.ch/wirtschaft/standardwas-der-frankenschock-angerichtet-hat/story/23117020">Tagesanzeiger I</a>, <a href="https://www.tagesanzeiger.ch/wirtschaft/unternehmen-und-konjunktur/Die-Industrie-schrumpft-weiter/story/19165962">Tagesanzeiger II</a>, <a href="http://dievolkswirtschaft.ch/de/2017/10/kaufmann-11-2017/">Die Volkswirtschaft</a>  (all in German), <a href="https://www.rtn.ch/rtn/Programmes/emissions/Place-publique/Salaire-minimum-Franc-fort-Infections-sexuellement-transmissibles.html">Radio Télévision Neuchâtel</a>, <a href="https://www.letemps.ch/economie/2017/10/24/berne-disseque-effets-franc-fort">Le Temps</a> (in French), <a href="https://www.reuters.com/article/us-swiss-franc-effect/swiss-made-helped-switzerland-weather-currency-storm-idUSKBN1CT0UT">Reuters</a>
+  </p>
+
+  <!--- STOP EDIT HERE -->
+  </div>
+  
   <div class="leftcolumn">
-    <div class="card">
-      <img src='DSC_3434_small.jpg'>
+      <img src='DSC_3434_small.jpg' width=100%>
+
+      <h3>CV</h3>
+      PDF version <a href='https://www.dropbox.com/s/o96frd9g6nex01u/CV_tobias_renkin_long.pdf?dl=1'>here</a>
 
       <h3>Contact</h3>
       Tobias Renkin<br>
       Danmarks Nationalbank<br>
       Havnegade 5<br>
       DK-1093 Copenhagen K<br>
-      tobias.renkin@gmail.com<br>
-    </div>
+      <a href='mailto:tobias.renkin@gmail.com'>tobias.renkin@gmail.com</a><br>
   </div>
 </div>
 
