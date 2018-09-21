@@ -4,14 +4,21 @@
 
 /* Add a gray background color with some padding */
 
-html {
-  overflow-y: scroll;
-}
-
 body {
     font-family: Times;
     background: #ffffff;
     line-height: 1.5;
+}
+
+.row{
+  width: 1200px;
+  margin: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header {
@@ -29,19 +36,6 @@ body {
     padding-right: 0px;
 }
 
-/* Clear floats after the columns */
-.row{
-	width: 1200px;
-	margin: auto;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Footer */
 .footer {
     width: 1200px;
     text-align: center;
@@ -95,7 +89,6 @@ a:active {
 	color: blue;
   text-decoration: underline;
 }
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
