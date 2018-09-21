@@ -6,8 +6,9 @@
 
 body {
     font-family: Times;
+    color: #000000;
     background: #ffffff;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .row{
@@ -91,9 +92,16 @@ a:active {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+@media screen and (max-width: 1200px) {
+    .leftcolumn, .center, .row, .footer, .header {   
         width: 100%;
-        padding: 0;
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+    }
+    .center {
+      text-align:left;
+    }
+    h1, h2, h3, h4 {
+      text-align:center;
     }
 }
