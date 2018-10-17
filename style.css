@@ -63,15 +63,14 @@ h3 {
 	font-size: 35px;
 	font-weight: normal;
 	margin-top:20px;
-  	margin-bottom:10px;
+  margin-bottom:10px;
 }
 
 h4 {
 	font-size: 30px;
 	font-weight: normal;
 	margin-top:20px;
-  	margin-bottom:10px;
-
+  margin-bottom:10px;
 }
 
 a:link {
@@ -90,6 +89,17 @@ a:active {
 	color: blue;
   text-decoration: underline;
 }
+
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    font-family: Times;
+    color: #000000;
+    background: #ffffff;
+    line-height: 1.4;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
