@@ -14,6 +14,7 @@ body {
 .row{
   width: 1200px;
   margin: auto;
+  text-align: left;
 }
 
 .row:after {
@@ -23,18 +24,21 @@ body {
 }
 
 .header {
+  border-bottom: 4px solid black;
 }
 
 .center {   
     float: right;
     width: 80%;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 .leftcolumn {
     float: left;
     width: 20%;
     padding-right: 0px;
+    padding-left: 10px;
 }
 
 .footer {
@@ -60,7 +64,7 @@ h2 {
 }
 
 h3 {
-	font-size: 35px;
+	font-size: 32px;
 	font-weight: normal;
 	margin-top:20px;
   margin-bottom:10px;
@@ -100,6 +104,10 @@ ol {
     line-height: 1.4;
 }
 
+.portrait {
+  border:0px;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
@@ -113,5 +121,8 @@ ol {
     }
     h1, h2, h3, h4 {
       text-align:center;
+    }
+    .portrait {
+      width: 150px;
     }
 }
