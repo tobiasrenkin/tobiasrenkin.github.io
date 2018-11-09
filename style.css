@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
-
 body {
     font-family: Times;
     color: #000000;
@@ -30,14 +28,14 @@ body {
 .center {   
     float: right;
     width: 80%;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
 .leftcolumn {
     float: left;
     width: 20%;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-left: 10px;
 }
 
@@ -46,8 +44,8 @@ body {
     text-align: center;
     margin: auto;
     margin-top: 50px;
-
-
+    padding-top: 10px;
+    border-top: 4px solid navy;
 }
 
 h1 {
@@ -105,11 +103,10 @@ ol {
 }
 
 .portrait {
-  border:0px;
+  border:1px solid navy;
 }
 
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
 @media screen and (max-width: 1200px) {
     .leftcolumn, .center, .row, .footer, .header {   
         width: 100%;
@@ -124,5 +121,6 @@ ol {
     }
     .portrait {
       width: 150px;
+      border:1px solid navy;
     }
 }
