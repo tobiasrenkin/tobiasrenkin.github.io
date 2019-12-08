@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  border-bottom: 4px solid navy;
+  border-bottom: 4px double navy;
 }
 
 .center {   
