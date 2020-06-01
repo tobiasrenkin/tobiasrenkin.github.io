@@ -9,19 +9,21 @@ body {
     line-height: 1.5;
 }
 
-.row{
+.content{
   width: 1200px;
   margin: auto;
   text-align: left;
 }
 
-.row:after {
+.content:after {
     content: "";
     display: table;
     clear: both;
 }
 
 .header {
+    width: 1200px;
+    margin: auto;
 	border-bottom: 4px double navy;
 }
 
@@ -130,4 +132,7 @@ p {
       width: 150px;
       border:1px solid navy;
     }
+    body {
+    	font-size:16pt;
+}
 }
