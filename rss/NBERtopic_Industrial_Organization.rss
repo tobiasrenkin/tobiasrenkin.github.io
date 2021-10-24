@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>RSS for NBER topic Industrial Organization</title><link>a link</link><description>RSS for NBER topic Industrial Organization</description><language>en-US</language><lastBuildDate>Sun, 24 Oct 2021 13:42:10 GMT</lastBuildDate><generator>rfeed v1.0.0</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>School Food Policy Affects Everyone: Retail Responses to the National School Lunch Program</title><link>https://www.nber.org/papers/w29384</link><description>We study the private market response to the National School Lunch Program, documenting economically meaningful spillovers to non-recipients. We focus on the Community Eligibility Provision (CEP), an expansion of the lunch program under the 2010 Healthy, Hunger-Free Kids Act. Under the CEP, participating schools offer free lunch to all students. We leverage both the staggered roll-out and eligibility criterion for the CEP, which is limited to schools where at least 40% of students participate in other means-tested welfare programs. We find that local adoption of the CEP causes households with children to reduce their grocery purchases, leading to a 10% decline in grocery sales at large retail chains. Retailers respond with chain-level price adjustments: chains with the most exposure lower prices by 2.5% across all outlets in the years following adoption, so that the program's welfare benefits propagate spatially. Using a stylized model of grocery demand, we estimate that, by 2016, the indirect benefit had reduced grocery costs for the median household by approximately 4.5%.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/333863", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+We would like to thank Lin Fan, Erik James, and Megan Taylor for excellent research assistance and participants at the AREUEA, ASSA-Industrial Organization Society, National Tax Association, NBER Urban Economics Summer Institute, UC Berkeley Opportunity Lab, and Urban Economics Association conferences and the Atlanta Fed, McGill, INRAE, UBC, UC Irvine, and Yale Economics for helpful comments, especially discussants Justin Gallagher, Justine Hastings, Xavier Jaravel, and Adam Kapor. This work is supported by the Robert King Steel Faculty Fellowship at the University of Chicago Booth School of Business and the Research Sponsor's Program of the Zell/Lurie Real Estate Center. Researcher(s) own analyses calculated (or derived) based in part on data from Nielsen Consumer LLC and marketing databases provided through the NielsenIQ Datasets at the Kilts Center for Marketing Data Center at The University of Chicago Booth School of Business. Researcher(s) own analyses calculated (or derived) based in part on data from Nielsen Consumer LLC and marketing databases provided through the NielsenIQ Datasets at the Kilts Center for Marketing Data Center at The University of Chicago Booth School of Business. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/jessie_handbury"&gt;Jessie Handbury&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+No additional disclosures.</description><author>Jessie Handbury, Sarah Moshary</author></item><item><title>Pay, Productivity and Management</title><link>https://www.nber.org/papers/w29377</link><description>Using confidential Census matched employer-employee earnings data we find that employees at more productive firms, and firms with more structured management practices, have substantially higher pay, both on average and across every percentile of the pay distribution. This pay-performance relationship is particularly strong amongst higher paid employees, with a doubling of firm productivity associated with 11% more pay for the highest-paid employee (likely the CEO) compared to 4.7% for the median worker. This pay-performance link holds in public and private firms, although it is almost twice as strong in public firms for the highest-paid employees. Top pay volatility is also strongly related to productivity and structured management, suggesting this performance-pay relationship arises from more aggressive monitoring and incentive practices for top earners.</description><author>Nicholas Bloom, Scott W. Ohlmacher, Cristina J. Tello-Trillo, Melanie Wallskog</author></item><item><title>Market Design</title><link>https://www.nber.org/papers/w29367</link><description>This Handbook chapter seeks to introduce students and researchers of industrial organization (IO) to the field of market design. We emphasize two important points of connection between the IO and market design fields: a focus on market failures—both understanding sources of market failure and analyzing how to fix them—and an appreciation of institutional detail.&lt;br /&gt;
+Section II reviews theory, focusing on introducing the theory of matching and assignment mechanisms to a broad audience. It introduces a novel “taxonomy” of market design problems, covers the key mechanisms and their properties, and emphasizes several points of connection to traditional economic theory involving prices and competitive equilibrium.&lt;br /&gt;
+Section III reviews structural empirical methods that build on this theory. We describe how to estimate a workhorse random utility model under various data environments, ranging from data on reported preference data such as rank-order lists to data only on observed matches. These methods enable a quantification of trade-offs in designing markets and the effects of new market designs.&lt;br /&gt;
+Section IV discusses a wide variety of applications. We organize this discussion into three broad aims of market design research: (i) diagnosing market failures; (ii) evaluating and comparing various market designs; (iii) proposing new, improved designs. A point of emphasis is that theoretical and empirical analysis have been highly complementary in this research.</description><author>Nikhil Agarwal, Eric Budish</author></item><item><title>From Just in Time, to Just in Case, to Just in Worst-Case: Simple models of a Global Supply Chain under Uncertain Aggregate Shocks.</title><link>https://www.nber.org/papers/w29345</link><description>Covid-19 highlighted the weaknesses in the supply chain. Many have argued that a more resilient or robust supply chain is needed. But what does a robust supply chain mean? And how do firms’ decisions change when taken that approach? This paper studies a very stylized model of a supply chain, where we study how the decision of a multinational corporation changes in the presence of uncertainty. The two standard theories of supply chain are Just-in-time and Just-in-case. Just-in-time argues in favor of pursuing efficiency, while Just-in-case studies how such decision changes when the firm faces idiosyncratic risk. We find that a robust supply chain is very different specially in the presence of systemic shocks. In this case, firms need to concentrate on the worst-case. This strategy implies a supply chain where the allocation of resources and capabilities does not correspond to the standard theories studied in economics, but follow a heuristic behavioral rule called “probability matching”. It has been found in nature and in experimental research that subjects appeal to probability matching when seeking survival. We find that a robust supply chain will reproduce this behavioral outcome. In fact, a multinational optimizing under uncertainty, follows a probability matching which leads to an allocation that is suboptimal from the individual producer point of view, but rules out the possibility of supply disruptions.</description><author>Bomin Jiang, Daniel E. Rigobon, Roberto Rigobon</author></item><item><title>Corporate Culture</title><link>https://www.nber.org/papers/w29322</link><description>Corporate culture is an omnibus term that includes many elements like norms, values, knowledge, and customs that are relevant to a firm. Economists have made great progress recently in devising methods of measuring different aspects of corporate culture. These empirical measures of culture have explained mergers and acquisitions, corporate risk-taking, and unethical behaviors observed in corporations, among other topics. We argue that unpacking corporate culture into its components is the right way to research it empirically. Theories of corporate culture are still in development, and we discuss the major contributions thus far. We argue that a theory of the firm and of corporate decision-making that is based on corporate culture is more germane to the practical realities of firms’ inner workings than prevailing theories based on agency costs. Corporate culture has the potential to set the theoretical paradigm for all corporate finance research.</description><author>Gary B. Gorton, Jill Grennan, Alexander K. Zentefis</author></item><item><title>Occupational Licensing and Accountant Quality: Evidence from the 150-Hour Rule</title><link>https://www.nber.org/papers/w29318</link><description>I examine the effects of occupational licensing on the quality of Certified Public Accountants (CPAs). I exploit the staggered adoption of the 150-hour rule, which increases the educational requirements for a CPA license. The analysis shows that the rule decreases the number of entrants into the profession, reducing both low- and high-quality candidates. Labor market proxies for quality find no difference between 150-hour rule CPAs and the rest. Moreover, rule CPAs exit public accounting at similar rates and have comparable writing quality to their non-rule counterparts. Overall, these findings are consistent with the theoretical argument that increases in licensing requirements restrict the supply of entrants and do little to improve quality in the labor market.</description><author>John M. Barrios</author></item><item><title>Dynamics of Large Multinationals</title><link>https://www.nber.org/papers/w29317</link><description>We develop a model of large multinational enterprises, each one producing a continuum of products. These outsized firms compete as oligopolists in a domestic and foreign market, facing competitive pressure from single-product firms that engage in monopolistic competition. The multinational enterprises invest in R&amp;amp;D in order to expand the span of their products and in foreign direct investment (FDI) in order to expand the range of products manufactured by their foreign affiliates. We study the dynamic evolution of these markets and characterize transition dynamics and steady states. In addition to the evolution of product spans, we characterize the evolution of prices, markups, market shares, and exports relative to subsidiary sales. Furthermore, we study comparative dynamics that result from changes in trade costs, R&amp;amp;D costs, the cost of FDI and productivity changes of the multinational firms.</description><author>Elhanan Helpman, Benjamin C. Niswonger</author></item><item><title>Task Allocation and On-the-job Training</title><link>https://www.nber.org/papers/w29312</link><description>We study dynamic task allocation when providers' expertise evolves endogenously through training. We characterize optimal assignment protocols and compare them to discretionary procedures, where it is the clients who select their service providers. Our results indicate that welfare gains from centralization are greater when tasks arrive more rapidly, and when training technologies improve. Monitoring seniors' backlog of clients always increases welfare but may decrease training. Methodologically, we explore a matching setting with endogenous types, and illustrate useful adaptations of queueing theory techniques for such environments.</description><author>Mariagiovanna Baccara, SangMok Lee, Leeat Yariv</author></item><item><title>Big Loans to Small Businesses: Predicting Winners and Losers in an Entrepreneurial Lending Experiment</title><link>https://www.nber.org/papers/w29311</link><description>We experimentally study the impact of substantially larger enterprise loans, in collaboration with an Egyptian lender. Larger loans generate small average impacts, but machine learning using psychometric data reveals dramatic heterogeneity. Top-performers (i.e., those with the highest predicted treatment effects) substantially increase profits, whereas profits for poor-performers drop. The magnitude of this difference implies that an individual lender’s credit allocation choices matter for aggregate income. Evidence on two fronts suggests large loans would be misallocated: top-performers are predicted by loan officers to have higher default rates; and, top-performers grow less than others when given small loans, implying that allocating larger loans based on prior performance is not efficient. Our results have important implications for credit expansion policy and our understanding of entrepreneurial talent: on the former, the use of psychometric data to identify top-performers suggests a pathway towards better allocation that revolves around entrepreneurial type more than firm type; on the latter, the reversal of fortune for poor-performers, who do well with small loans but not large, indicates a type of entrepreneur that we call a “go-getter” who performs well when constrained but poorly when not.</description><author>Gharad T. Bryan, Dean Karlan, Adam Osman</author></item><item><title>Dynamic Strategic Corporate Finance: A Tug of War with Financial Frictions</title><link>https://www.nber.org/papers/w29310</link><description>Access to capital markets plays a key role for the evolution of an industry over time. We develop a benchmark theoretical setting that integrates core corporate finance insights about the impact of financial frictions on investment with those from industrial organization on dynamic competition and industry evolution under perfect capital markets. Using state of the art computational tools to systematically detect and evaluate multiple equilibria and to thoroughly explore the parameter space of our model, we show how, depending on key industry characteristics such as market size, financial frictions impact firms' pricing and investment strategies and the degree of industry concentration.</description><author>Ulrich Doraszelski, João F. Gomes, Felix Nockher</author></item><item><title>Why Don’t Elite Colleges Expand Supply?</title><link>https://www.nber.org/papers/w29309</link><description>While college enrollment has more-than doubled since 1970, elite colleges have barely increased supply, instead reducing admit rates. We show that straightforward reasons cannot explain this behavior. We propose a model where colleges compete on prestige, measured using relative selectivity or relative admit rates. A key comparative static of the model is that higher demand decreases [increases] the admit rate when the weight on prestige is above [below] a critical value, consistent with experience in elite [non-elite] colleges. A calibrated version of the model closely replicates the pattern in the data of declining admit rates at elite colleges while counter-factual simulations without prestige fail. Prestige competition is inefficient. Allowing elite colleges to collude on admissions strategy internalizes the non-pecuniary prestige externality and is Pareto improving.</description><author>Peter Q. Blair, Kent Smetters</author></item><item><title>Foundations of Demand Estimation</title><link>https://www.nber.org/papers/w29305</link><description>Demand elasticities and other features of demand are critical determinants of the answers to most positive and normative questions about market power or the functioning of markets in practice. As a result, reliable demand estimation is an essential input to many types of research in Industrial Organization and other fields of economics. This chapter presents a discussion of some foundational issues in demand estimation. We focus on the distinctive challenges of demand estimation and  strategies one can use  to overcome them. We cover core models, alternative data settings, common estimation approaches, the role and choice of instruments, and nonparametric identification.</description><author>Steven T. Berry, Philip A. Haile</author></item><item><title>Technology Adoption and Market Allocation:The Case of Robotic Surgery</title><link>https://www.nber.org/papers/w29301</link><description>The adoption of healthcare technology is central to improving productivity in this sector. To provide new evidence on how technology affects healthcare markets, we focus on one area where adoption has been particularly rapid: surgery for prostate cancer. Over just six years, robotic surgery grew to become the dominant intensive prostate cancer treatment method. Using a difference-in-differences design, we show that adopting a robot drives prostate cancer patients to the hospital. To test whether this result reflects market expansion or business stealing, we also consider market-level effects of adoption and find they are significant but smaller, suggesting that adoption expands the market while also reallocating some patients across hospitals. Marginal patients are relatively young and healthy, inconsistent with the concern that adoption broadens the criteria for intervention to patients who would gain little from it. We conclude by discussing implications for the social value of technology diffusion in healthcare markets.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/321632", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+We thank Amitabh Chandra, Timothy Beatty, Pinar Karaca-Mandic, Richard Sexton, Monica Singhal, seminar participants at NBER Health Economics Boot Camp and session participants at the American Society of Health Economics virtual conference for their helpful comments. We thank Maurice Dalton, Mohan Ramanujan, and Jean Roth for their assistance with CMS data. We gratefully acknowledge support from the National Institute on Aging P01-AG005842. The authors declare that they have no relevant or material financial interests that relate to the research described in this paper. This research was approved by the Institutional Review Boards of Columbia University and the National Bureau of Economic Research. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/rouhua_zhou"&gt;R. Annetta Zhou&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+N/A</description><author>Danea Horn, Adam Sacarny, R. Annetta Zhou</author></item><item><title>Privatization of Public Goods: Evidence from the Sanitation Sector in Senegal</title><link>https://www.nber.org/papers/w29295</link><description>Privatization of a public good (the management of sewage treatment centers in Dakar, Senegal) leads to an increase in the productivity of downstream sewage dumping companies and a decrease in downstream prices of the services they provide to households. We use the universe of legal dumps of sanitation waste from May 2009 to November 2018 to show that legal dumping increased substantially following privatization–on average an increase of 61.7%, or an increase of about 14,000 cubic meters each month. This is due to increased productivity of all trucks, not just those associated with the company managing the treatment centers. Household-level survey data shows that prices of legal sanitary dumping decreased by ten percent following privatization, and DHS data show that diarrhea rates among children under five decreased in Dakar relative to secondary cities in Senegal following privatization with no similar effect on respiratory illness as a placebo.</description><author>Joshua W. Deutschmann, Jared E. Gars, Jean-François Houde, Molly Lipscomb, Laura A. Schechter</author></item><item><title>Dynamic Games in Empirical Industrial Organization</title><link>https://www.nber.org/papers/w29291</link><description>This survey is organized around three main topics: models, econometrics, and empirical applications. Section 2 presents the theoretical framework, introduces the concept of Markov Perfect Nash Equilibrium, discusses existence and multiplicity, and describes the representation of this equilibrium in terms of conditional choice probabilities. We also discuss extensions of the basic framework, including models in continuous time, the concepts of oblivious equilibrium and experience-based equilibrium, and dynamic games where firms have non-equilibrium beliefs. In section 3, we first provide an overview of the types of data used in this literature, before turning to a discussion of identification issues and results, and estimation methods. We review different methods to deal with multiple equilibria and large state spaces. We also describe recent developments for estimating games in continuous time and incorporating serially correlated unobservables, and discuss the use of machine learning methods to solving and estimating dynamic games. Section 4 discusses empirical applications of dynamic games in IO. We start describing the first empirical applications in this literature during the early 2000s. Then, we review recent applications dealing with innovation, antitrust and mergers, dynamic pricing, regulation, product repositioning, advertising, uncertainty and investment, airline network competition, dynamic matching, and natural resources. We conclude with our view of the progress made in this literature and the remaining challenges.</description><author>Victor Aguirregabiria, Allan Collard-Wexler, Stephen P. Ryan</author></item><item><title>Structural Empirical Analysis of Contracting in Vertical Markets</title><link>https://www.nber.org/papers/w29282</link><description>This chapter presents an overview of advances in the structural analysis of contracting in vertical markets over the past fifteen years. We provide a discussion of theoretical models of contracting and bargaining that form the basis of recent empirical work, and then present common approaches used by researchers to take these models to the data. We also briefly survey the structural empirical literature on topics in vertical markets (including horizontal and vertical mergers, price discrimination, and nonlinear and exclusionary contracts), and conclude with a discussion of potential topics for future research.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/321661", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+This chapter is prepared for the forthcoming Handbook of Industrial Organization, Volume 4. We thank the editors, three anonymous referees, and Paulo Somaini for helpful comments. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/michael_whinston"&gt;Michael D. Whinston&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+I am a partner at the consulting firm Bates White LLC.</description><author>Robin S. Lee, Michael D. Whinston, Ali Yurukoglu</author></item><item><title>Signaling in Online Credit Markets</title><link>https://www.nber.org/papers/w29268</link><description>We study how signaling affects equilibrium outcomes and welfare in an online credit market using detailed data on loan characteristics and borrower repayment. We build and estimate an equilibrium model in which a borrower may signal her default risk through the reserve interest rate. Comparing a market with and without signaling relative to the benchmark with no asymmetric information, we find that adverse selection destroys as much as 34% of total surplus, up to 78% of which can be restored with signaling. We also estimate backward-bending supply curves for some markets, consistent with the prediction of Stiglitz &amp;amp; Weiss (1981).</description><author>Kei Kawai, Ken Onishi, Kosuke Uetake</author></item><item><title>Frictions in Product Markets</title><link>https://www.nber.org/papers/w29259</link><description>This is an invited chapter for the forthcoming Volume 4 of the Handbook of Industrial Organization. We focus on markets with frictions, such as transaction costs, asymmetric information, search and matching frictions. We discuss how such frictions affect allocations, favor the emergence of intermediaries or dealers, and potentially create market power. Our focus is mostly on markets with many participants rather than on transactions that are bilateral or involve a small number of players.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/317406", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+We thank three anonymous reviewers for their insightful suggestions. Alessandro Gavazza gratefully acknowledges financial support from the European Research Council under the Grant Agreements No. 771004, Alessandro Lizzeri gratefully acknowledges financial support from NSF grant SES-1949381. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/alessandro_gavazza"&gt;Alessandro Gavazza&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+Alessandro Gavazza's disclosure of all relevant and material financial relationships is available on his website: https://sites.google.com/site/alessandrogavazza/disclosure</description><author>Alessandro Gavazza, Alessandro Lizzeri</author></item><item><title>Empirical Models of Demand and Supply in Differentiated Products Industries</title><link>https://www.nber.org/papers/w29257</link><description>This is an invited chapter for the forthcoming Volume 4 of the Handbook of Industrial Organization. We present empirical models of demand and supply in differentiated products industries with an emphasis on the key ideas arising from the recent applied literature. We start with a discussion of the challenges in modeling and estimation of demand for  differentiated products, and focus on discrete choice characteristics-based demand models that address these challenges while allowing enough flexibility to capture realistic substitution patterns. Our discussion emphasizes how empirical strategies can leverage different features of data depending on the sources of variation that are commonly found in applied work. Moving to the supply-side, we show how demand estimates combined with a pricing model, can be used to recover markups and marginal costs. We also show how the model of pricing can be tested. We discuss a baseline Bertrand-Nash model of competitive pricing, and expand it to cover a) coordinated pricing, b) wholesale relationships, and c) bargaining. We end the chapter with extensions of the demand model, including dynamic and continuous demand.</description><author>Amit Gandhi, Aviv Nevo</author></item><item><title>Hub and Spoke Cartels: Theory and Evidence from the Grocery Industry</title><link>https://www.nber.org/papers/w29253</link><description>Numerous recently uncovered cartels operated along the supply chain, with firms at one end facilitating collusion at the other – hub-and-spoke arrangements. These cartels are hard to rationalize because they induce double marginalization and higher costs. We examine Canada’s alleged bread cartel and provide the first comprehensive analysis of hub-and-spoke collusion. We make three contributions: i) Using court documents and pricing data we provide evidence that collusion existed at both ends of the supply chain, ii) we show that collusion was effective, increasing inflation by about 40% and iii) we provide a model explaining why this form of collusion arose.</description><author>Robert Clark, Ignatius Horstmann, Jean-François Houde</author></item><item><title>Harms of AI</title><link>https://www.nber.org/papers/w29247</link><description>This essay discusses several potential economic, political and social costs of the current path of AI technologies. I argue that if AI continues to be deployed along its current trajectory and remains unregulated, it may produce various social, economic and political harms. These include: damaging competition, consumer privacy and consumer choice; excessively automating work, fueling inequality, inefficiently pushing down wages, and failing to improve worker productivity; and damaging political discourse, democracy's most fundamental lifeblood. Although there is no conclusive evidence suggesting that these costs are imminent or substantial, it may be useful to understand them before they are fully realized and become harder or even impossible to reverse, precisely because of AI's promising and wide-reaching potential. I also suggest that these costs are not inherent to the nature of AI technologies, but are related to how they are being used and developed at the moment - to empower corporations and governments against workers and citizens. As a result, efforts to limit and reverse these costs may need to rely on regulation and policies to redirect AI research. Attempts to contain them just by promoting competition may be insufficient.</description><author>Daron Acemoglu</author></item><item><title>Flagship Entry in Online Marketplaces</title><link>https://www.nber.org/papers/w29239</link><description>In the world of omnichannel retail, some brands open a flagship store at online marketplaces, while others avert it. Focusing on a large e-commerce platform, we empirically study how flagship entry affects consumers, the platform, and various sellers on the platform.&lt;br /&gt;
+We find flagship entry may benefit consumers by expanding the choice set, by intensifying price competition within the entry brand, and by improving consumer perception for parts of the platform. In the meantime, flagship entry cannibalizes the sales of same-brand sellers, while other brands may gain as the buyer base expands on the platform.&lt;br /&gt;
+Counterfactual simulation suggests that flagship entry improves the gross merchandise value (GMV) of the platform but hurts existing sellers of the entry brand. On average, the effect on consumer welfare is more positive if the flagship entry is from a non-prominent brand than from a prominent brand, because consumers tend to lower their willingness to pay for individual sellers upon a prominent flagship entry. In hypothetical scenarios where flagship entry were accompanied by constraints on other same-brand sellers, the reduced competition would benefit the flagship store but hurt consumers.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/313912", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+We are grateful to the anonymous e-commerce platform for various support on this project. We thank Qihong Liu, Shane Greenstein, Feng Zhu, Alexander MacKay, Garrett Johnson, Chiara Farronato, Larry White, Yossi Spiegel, Michael Ward and other participants at Harvard Business School Digital Initiative seminar, Bank of Canada BBL seminar, the Virtual Digital Economy seminar, and Renmin University seminar for constructive comments, The paper only reflects the opinion of the authors, and not the opinion of any organizations. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/ginger_jin"&gt;Ginger Zhe Jin&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.
+&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/zhentong_lu"&gt;Zhentong Lu&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.
+&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/xiaolu_zhou"&gt;Xiaolu Zhou&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.</description><author>Ginger Zhe Jin, Zhentong Lu, Xiaolu Zhou, Lu Fang</author></item><item><title>Energy and Environmental Markets, Industrial Organization, and Regulation</title><link>https://www.nber.org/papers/w29235</link><description>This paper discusses contributions that industrial organization economists have made to our understanding of energy markets and environmental regulation. We emphasize the substantive contributions of recent papers while also highlighting how this literature has adopted and sometimes augmented theoretical and empirical tools from industrial organization. Many of the topics examined by this literature—especially auctions, investment, productivity and innovation, and regulation—also apply to a variety of settings beyond energy and the environment. We also indicate areas where future research is likely to be fruitful, with an emphasis on how industrial organization economists can help inform energy and environmental policies.</description><author>Ryan Kellogg, Mar Reguant</author></item><item><title>An Industrial Organization Perspective on Productivity</title><link>https://www.nber.org/papers/w29229</link><description>This chapter overviews productivity research from an industrial organization perspective. We focus on what is known and what still needs to be learned about the productivity levels and dynamics of individual producers, but also how these interact through markets and industries to influence productivity aggregates. We overview productivity concepts, facts, data, measurement, analysis, and open questions.</description><author>Jan De Loecker, Chad Syverson</author></item><item><title>Venture Capitalists’ Access to Finance and Its Impact on Startups</title><link>https://www.nber.org/papers/w29211</link><description>Although an extensive literature shows that startups are financially constrained and that constraints vary by geography, the source of these constraints is still relatively unknown. We explore intermediary financing constraints, a channel studied in the banking literature, but only indirectly addressed in the venture capital (VC) literature. Our empirical setting is the VC fundraising and startup financing environment around the passage of the Volcker Rule, which restricted banks’ ability to invest in venture capital funds as limited partners (LPs). The rule change disproportionately impacted regions of the U.S. historically lacking in VC financing. We find that a one standard deviation increase in VCs’ exposure to the loss of banks as LPs led to an 18% decline in fund size and about a 10% decrease in the likelihood of raising a follow-on fund. Startups were not completely cushioned from the additional constraints on their VCs: capital raised fell and pre-money valuations declined. Overall, VC financing constraints manifest as fewer, smaller funds that change investment strategy and experience increases in bargaining power. Last, we show that the rule change increased the likelihood startups move out of impacted states, thus exacerbating the geographic disparity in high-growth entrepreneurship.</description><author>Jun Chen, Michael Ewens</author></item><item><title>Markups and Fixed Costs in Generic and Off-Patent Pharmaceutical Markets</title><link>https://www.nber.org/papers/w29206</link><description>There is wide dispersion in pharmaceutical prices across countries with comparable quality standards. Under monopoly, off-patent and generic drug prices are at least four times higher in the United States than in comparable English-speaking high income countries. With five or more competitors, off-patent drug prices are similar or lower. Our analysis shows that differential US markups are largely driven by the market power of drug suppliers and not due to wholesale intermediaries or pharmacies. Furthermore, we show that the traditional mechanism of reducing market power – free entry – is limited because implied entry costs are substantially higher in the US.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/309449", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+Thanks to Joe Shapiro, Chris Snyder, Steve Berry, Fiona Scott Morton, Jason Abaluck, Jon Skinner, Leila Agha, John Rust, Nina Pavcnik, Stuart Craig, Samuel Moy and seminar participants. Thanks to Serena Sampler and Ray McCormick for excellent research assistance. Part of this research was conducted while Ganapati was a Fellow at Dartmouth College and at Ludwig-Maximilians-Universität Munich. All errors are our own. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/sharat_ganapati"&gt;Sharat Ganapati&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+None.</description><author>Sharat Ganapati, Rebecca McKibbin</author></item><item><title>How Well Does Bargaining Work in Consumer Markets? A Robust Bounds Approach</title><link>https://www.nber.org/papers/w29202</link><description>This study provides a structural analysis of detailed, alternating-offer bargaining data from eBay, deriving bounds on buyers and sellers private value distributions using a range of assumptions on behavior. These assumptions range from very weak (assuming only that acceptance and rejection decisions are rational) to less weak (e.g., assuming that bargaining offers are weakly increasing in players' private values). We estimate the bounds and show what they imply for consumer negotiation behavior in theory and practice. For the median product, bargaining ends in impasses in 43% of negotiations even when the buyer values the good more than the seller.</description><author>Joachim Freyberger, Bradley Larsen</author></item><item><title>Young Firms, Old Capital</title><link>https://www.nber.org/papers/w29189</link><description>Across a broad range of equipment types and industries, we document a pattern of local capital reallocation from older firms to younger firms.  Start-ups purchase a disproportionate share of old physical capital previously owned by more mature firms.  The evidence is consistent with financial constraints driving differential demand for vintage capital.  The local supply of used capital influences start-up entry, job creation, investment choices, and growth, particularly when capital is immobile.  Conversely, incumbents accelerate capital replacement in the presence of more young firms.  The evidence suggests previously undocumented benefits to co-location between old and young firms.</description><author>Song Ma, Justin Murfin, Ryan D. Pratt</author></item></channel></rss>

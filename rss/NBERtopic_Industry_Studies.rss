@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>RSS for NBER topic Industry Studies</title><link>a link</link><description>RSS for NBER topic Industry Studies</description><language>en-US</language><lastBuildDate>Sun, 24 Oct 2021 13:42:10 GMT</lastBuildDate><generator>rfeed v1.0.0</generator><docs>https://github.com/svpino/rfeed/blob/master/README.md</docs><item><title>Privatization of Public Goods: Evidence from the Sanitation Sector in Senegal</title><link>https://www.nber.org/papers/w29295</link><description>Privatization of a public good (the management of sewage treatment centers in Dakar, Senegal) leads to an increase in the productivity of downstream sewage dumping companies and a decrease in downstream prices of the services they provide to households. We use the universe of legal dumps of sanitation waste from May 2009 to November 2018 to show that legal dumping increased substantially following privatization–on average an increase of 61.7%, or an increase of about 14,000 cubic meters each month. This is due to increased productivity of all trucks, not just those associated with the company managing the treatment centers. Household-level survey data shows that prices of legal sanitary dumping decreased by ten percent following privatization, and DHS data show that diarrhea rates among children under five decreased in Dakar relative to secondary cities in Senegal following privatization with no similar effect on respiratory illness as a placebo.</description><author>Joshua W. Deutschmann, Jared E. Gars, Jean-François Houde, Molly Lipscomb, Laura A. Schechter</author></item><item><title>Flagship Entry in Online Marketplaces</title><link>https://www.nber.org/papers/w29239</link><description>In the world of omnichannel retail, some brands open a flagship store at online marketplaces, while others avert it. Focusing on a large e-commerce platform, we empirically study how flagship entry affects consumers, the platform, and various sellers on the platform.&lt;br /&gt;
+We find flagship entry may benefit consumers by expanding the choice set, by intensifying price competition within the entry brand, and by improving consumer perception for parts of the platform. In the meantime, flagship entry cannibalizes the sales of same-brand sellers, while other brands may gain as the buyer base expands on the platform.&lt;br /&gt;
+Counterfactual simulation suggests that flagship entry improves the gross merchandise value (GMV) of the platform but hurts existing sellers of the entry brand. On average, the effect on consumer welfare is more positive if the flagship entry is from a non-prominent brand than from a prominent brand, because consumers tend to lower their willingness to pay for individual sellers upon a prominent flagship entry. In hypothetical scenarios where flagship entry were accompanied by constraints on other same-brand sellers, the reduced competition would benefit the flagship store but hurt consumers.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/313912", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+We are grateful to the anonymous e-commerce platform for various support on this project. We thank Qihong Liu, Shane Greenstein, Feng Zhu, Alexander MacKay, Garrett Johnson, Chiara Farronato, Larry White, Yossi Spiegel, Michael Ward and other participants at Harvard Business School Digital Initiative seminar, Bank of Canada BBL seminar, the Virtual Digital Economy seminar, and Renmin University seminar for constructive comments, The paper only reflects the opinion of the authors, and not the opinion of any organizations. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/ginger_jin"&gt;Ginger Zhe Jin&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.
+&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/zhentong_lu"&gt;Zhentong Lu&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.
+&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/xiaolu_zhou"&gt;Xiaolu Zhou&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+During the early part of the research, I was a paid consultant for the anonymous e-commerce platform studied in this paper. The consultancy is not specific to the project.</description><author>Ginger Zhe Jin, Zhentong Lu, Xiaolu Zhou, Lu Fang</author></item><item><title>An Industrial Organization Perspective on Productivity</title><link>https://www.nber.org/papers/w29229</link><description>This chapter overviews productivity research from an industrial organization perspective. We focus on what is known and what still needs to be learned about the productivity levels and dynamics of individual producers, but also how these interact through markets and industries to influence productivity aggregates. We overview productivity concepts, facts, data, measurement, analysis, and open questions.</description><author>Jan De Loecker, Chad Syverson</author></item><item><title>Markups and Fixed Costs in Generic and Off-Patent Pharmaceutical Markets</title><link>https://www.nber.org/papers/w29206</link><description>There is wide dispersion in pharmaceutical prices across countries with comparable quality standards. Under monopoly, off-patent and generic drug prices are at least four times higher in the United States than in comparable English-speaking high income countries. With five or more competitors, off-patent drug prices are similar or lower. Our analysis shows that differential US markups are largely driven by the market power of drug suppliers and not due to wholesale intermediaries or pharmacies. Furthermore, we show that the traditional mechanism of reducing market power – free entry – is limited because implied entry costs are substantially higher in the US.
+&lt;/p&gt;
+
+
+              &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+&lt;/div&gt;
+
+  &lt;script&gt;
+    function getCookieValue(name) {
+      var cookies = "; " + document.cookie,
+          parts = cookies.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+    fetch("/api/v1/auth/309449", { credentials: "include" })
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          response.text().then(function(data) {
+            var cookieValue = getCookieValue('STYXKEY_expecting_cookie'),
+                userEmailInput = document.getElementById('user_email');
+
+            document.getElementById('authorize-banner').innerHTML = data;
+
+            if (userEmailInput) {
+              userEmailInput.value = cookieValue ? cookieValue : '';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            let can_view = Boolean(response.headers.get('X-NBER-CAN-VIEW-PAPER'));
+            let sub_type = response.headers.get('X-NBER-SUBSCRIBER-TYPE');
+
+            dataLayer.push({
+              "event": "can_view_paper_response",
+              "can_view_paper": can_view,
+              "subscriber_type": sub_type,
+            });
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  &lt;/script&gt;
+
+  &lt;div id="authorize-banner"&gt;&lt;/div&gt;
+
+&lt;div class="accordion-set"&gt;
+  &lt;ul&gt;
+          &lt;li&gt;
+        &lt;div class="accordion"&gt;
+          &lt;button class="accordion__title js-accordion" aria-expanded="false" aria-controls="accordion-body-guid1" id="accordion-button-guid1"&gt;Acknowledgements and Disclosures&lt;/button&gt;
+          &lt;div class="accordion__body" id="accordion-body-guid1" aria-labelledby="accordion-button-guid1" style="display: none;"&gt;&lt;p&gt;
+Thanks to Joe Shapiro, Chris Snyder, Steve Berry, Fiona Scott Morton, Jason Abaluck, Jon Skinner, Leila Agha, John Rust, Nina Pavcnik, Stuart Craig, Samuel Moy and seminar participants. Thanks to Serena Sampler and Ray McCormick for excellent research assistance. Part of this research was conducted while Ganapati was a Fellow at Dartmouth College and at Ludwig-Maximilians-Universität Munich. All errors are our own. The views expressed herein are those of the authors and do not necessarily reflect the views of the National Bureau of Economic Research.
+&lt;/p&gt;
+&lt;br&gt;
+              &lt;div class="disclosure"&gt;
+    &lt;strong&gt;&lt;a href="/people/sharat_ganapati"&gt;Sharat Ganapati&lt;/a&gt;&lt;/strong&gt;
+    &lt;p&gt;
+None.</description><author>Sharat Ganapati, Rebecca McKibbin</author></item><item><title>How Well Does Bargaining Work in Consumer Markets? A Robust Bounds Approach</title><link>https://www.nber.org/papers/w29202</link><description>This study provides a structural analysis of detailed, alternating-offer bargaining data from eBay, deriving bounds on buyers and sellers private value distributions using a range of assumptions on behavior. These assumptions range from very weak (assuming only that acceptance and rejection decisions are rational) to less weak (e.g., assuming that bargaining offers are weakly increasing in players' private values). We estimate the bounds and show what they imply for consumer negotiation behavior in theory and practice. For the median product, bargaining ends in impasses in 43% of negotiations even when the buyer values the good more than the seller.</description><author>Joachim Freyberger, Bradley Larsen</author></item></channel></rss>
