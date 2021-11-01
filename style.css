@@ -125,6 +125,11 @@ p {
         padding: 0px 0px 20px 0px;
         text-align: center;
     }
+    .content{
+        width: 95%;
+        padding-left: auto;
+        padding-right: auto;
+    }
     .center {
         text-align:justify;
     }
