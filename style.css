@@ -23,6 +23,9 @@ body {
 
 .header {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
     margin-bottom: 25px;
     border-bottom: 4px double navy;
 }
