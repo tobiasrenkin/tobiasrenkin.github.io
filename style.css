@@ -3,16 +3,14 @@
 }
 
 body {
-    font-family: "Noto Sans", "Helvetica";
-    color: #000000;
-    background: #ffffff;
+    font-family:sans-serif;
     line-height: 1.5;
 }
 
 .content{
-  width: 1200px;
-  margin: auto;
-  text-align: left;
+    width: 1200px;
+    margin: auto;
+    text-align: left;
 }
 
 .content:after {
@@ -23,26 +21,21 @@ body {
 
 .header {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 25px;
-    border-bottom: 4px double navy;
+    margin: auto;
+    border-bottom: 4px double darkblue;
 }
 
 .center {   
     float: right;
     width: 80%;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 20px;
     text-align:justify;
 }
 
 .leftcolumn {
     float: left;
     width: 20%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 20px;
 }
 
 .footer {
@@ -51,7 +44,7 @@ body {
     margin: auto;
     margin-top: 50px;
     padding-top: 10px;
-    border-top: 4px double navy;
+    border-top: 4px double darkblue;
 }
 
 h1 {
@@ -60,54 +53,28 @@ h1 {
 	margin:5px 0px 5px 0px;
 }
 
-h2 {
-	font-size: 40px;
-	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
-}
-
 h3 {
 	font-size: 25px;
 	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
-}
-
-h4 {
-	font-size: 30px;
-	font-weight: normal;
-	margin-top:20px;
-  	margin-bottom:10px;
+	margin-top:1em;
+  	margin-bottom:0.3em;
 }
 
 a:link {
-	color: navy;
-  text-decoration: none;
+	color: darkblue;
+    text-decoration: underline;
 }
 a:visited {
-	color: navy;
-  text-decoration: none;
-}
-a:hover {
-	color: navy;
-	text-decoration: underline;
-}
-a:active {
-	color: navy;
-  text-decoration: underline;
+    color: darkblue;
+    text-decoration: underline;
 }
 
 ol,ul {
-    margin: 0;
     padding: 0;
     list-style-position: inside;
-    color: #000000;
-    background: #ffffff;
-    line-height: 1.4;
 }
 ul li {
-	margin-bottom: 1.2em;
+	margin-bottom: 1em;
 }
 p {
 	margin-top: 0.5em; 
@@ -115,32 +82,25 @@ p {
 }
 
 .portrait {
-  border:1px solid navy;
+    border:1px solid darkblue;
 }
 
 /* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
+
 @media screen and (max-width: 1200px) {
-    .leftcolumn, .center, .row, .footer, .header {   
+    .leftcolumn, .center, .row, .footer, .header, .content {   
         width: 100%;
-        padding: 0px 0px 20px 0px;
         text-align: center;
-    }
-    .content{
-        width: 95%;
-        padding-left: auto;
-        padding-right: auto;
+        font-size:  16pt;
     }
     .center {
         text-align:justify;
     }
     h1, h2, h3, h4 {
-      text-align:center;
+        text-align:center;
     }
     .portrait {
-      width: 150px;
-      border:1px solid navy;
+        width: 25%;
+        border:1px solid darkblue;
     }
-    body {
-    	font-size:16pt;
-}
 }
