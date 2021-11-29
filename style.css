@@ -3,104 +3,87 @@
 }
 
 body {
-    font-family:sans-serif;
-    line-height: 1.5;
+    font-family: sans-serif;
+    line-height: 1.66;
+    margin: 0;
 }
 
-.content{
+main, header, footer {
     width: 1200px;
     margin: auto;
-    text-align: left;
+    overflow: auto;
 }
 
-.content:after {
-    content: "";
-    display: table;
-    clear: both;
+header {
+    border-bottom: 4px double;
 }
 
-.header {
-    width: 1200px;
-    margin: auto;
-    border-bottom: 4px double darkblue;
+footer {
+    text-align: center;
+    border-top: 4px double;
+    padding: 0.5em;
 }
 
-.center {   
+aside {
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+
+.content {   
     float: right;
     width: 80%;
     padding: 20px;
     text-align:justify;
 }
 
-.leftcolumn {
-    float: left;
-    width: 20%;
-    padding: 20px;
+h1 { 
+    font-weight: normal;
+    font-size: 250%; 
+    margin: 0;
 }
 
-.footer {
-    width: 1200px;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    padding-top: 10px;
-    border-top: 4px double darkblue;
-}
-
-h1 {
-	font-size: 40px;
-	font-weight: normal;
-	margin:5px 0px 5px 0px;
-}
-
-h3 {
-	font-size: 25px;
-	font-weight: normal;
-	margin-top:1em;
-  	margin-bottom:0.3em;
-}
-
-a:link {
-	color: darkblue;
-    text-decoration: underline;
-}
-a:visited {
-    color: darkblue;
-    text-decoration: underline;
+h2 {
+    font-weight: normal;
+    font-size:150%;
+    margin: 0.5em 0;
 }
 
 ol,ul {
     padding: 0;
     list-style-position: inside;
 }
-ul li {
-	margin-bottom: 1em;
-}
-p {
-	margin-top: 0.5em; 
-	margin-bottom: 0.5em; 
+
+li  {
+    margin: 1em 0;
 }
 
-.portrait {
-    border:1px solid darkblue;
+p {
+    margin: 0.5em 0;
+}
+
+img {
+    border: 1px solid;
 }
 
 /* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
-
 @media screen and (max-width: 1200px) {
-    .leftcolumn, .center, .row, .footer, .header, .content {   
+    
+    footer, header, main, aside {   
         width: 100%;
         text-align: center;
-        font-size:  16pt;
     }
-    .center {
-        text-align:justify;
+
+    .content {
+        width: 100%;
     }
-    h1, h2, h3, h4 {
-        text-align:center;
+    
+    h1, h2 {
+        text-align: center;
     }
-    .portrait {
+    
+    img {
         width: 25%;
-        border:1px solid darkblue;
     }
+    
 }
