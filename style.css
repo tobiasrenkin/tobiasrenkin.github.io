@@ -39,14 +39,12 @@ aside {
 
 h1 { 
     font-weight: normal;
-    font-size: 250%; 
-    margin: 0;
+    font-size: 250%;
+    margin: 5px 20px 5px 20px;
 }
 
 h2 {
-    font-weight: normal;
-    font-size:150%;
-    margin: 0.5em 0;
+    font-weight: normal;    
 }
 
 ol,ul {
@@ -62,8 +60,9 @@ p {
     margin: 0.5em 0;
 }
 
-img {
+.portrait {
     border: 1px solid;
+    width: 100%;
 }
 
 /* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
@@ -82,8 +81,8 @@ img {
         text-align: center;
     }
     
-    img {
-        width: 25%;
+    .portrait {
+        width: 50%;
     }
     
 }
