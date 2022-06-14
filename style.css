@@ -71,6 +71,7 @@ p {
     footer, header, main, aside {   
         width: 100%;
         text-align: center;
+        font-size: 18px;
     }
 
     .content {
