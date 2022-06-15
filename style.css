@@ -67,7 +67,9 @@ p {
 
 /* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
 @media screen and (max-width: 1200px) {
-    
+    html {
+        font-size: 22px;
+    }  
     footer, header, main, aside {   
         width: 100%;
         text-align: center;
@@ -75,7 +77,6 @@ p {
 
     .content {
         width: 100%;
-        font-size: 18px;
     }
     
     h1, h2 {
@@ -87,21 +88,3 @@ p {
     }
     
 }
-@media (max-width: 1921px) {
-  html {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 1441px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1025px) {
-  html {
-    font-size: 18px;
-  }
-}
-
