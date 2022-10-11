@@ -3,6 +3,7 @@
 }
 
 body {
+    font-size: 18px;
     font-family: sans-serif;
     line-height: 1.66;
     margin: 0;
@@ -73,6 +74,7 @@ p {
     footer, header, main, aside {   
         width: 100%;
         text-align: center;
+        padding: 2em;
     }
 
     .content {
@@ -81,6 +83,7 @@ p {
     
     h1, h2 {
         text-align: center;
+        font-size: 40Thursday, 2022-09-29, 14:55px;
     }
     
     .portrait {
