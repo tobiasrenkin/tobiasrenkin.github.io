@@ -16,26 +16,26 @@ main, header, footer {
 }
 
 header {
-    padding: 20px;
+    padding: 1em;
     border-bottom: 4px double;
 }
 
 footer {
     text-align: center;
     border-top: 4px double;
-    padding: 20px;
+    padding: 1em;
 }
 
 .left {
     float: left;
     width: 22%;
-    padding: 20px;
+    padding: 1em;
 }
 
 .content {
     float: right;
     width: 78%;
-    padding: 20px;
+    padding: 1em;
     text-align: justify;
 }
 
@@ -52,11 +52,10 @@ h1 {
 h2 {
     font-weight: normal;
     font-size: 1.5em;
-    margin: 0.7em 0em;
 }
 
 p {
-    margin: 0.7em 0em;
+    margin: 0.75em 0em;
 }
 
 .portrait {
@@ -69,7 +68,6 @@ p {
     footer, header, main, .left {   
         width: 100%;
         text-align: center;
-        padding: 1.5em;
     }
 
     .content {
@@ -81,7 +79,7 @@ p {
     }
     
     .portrait {
-        width: 33%;
+        width: 40%;
     }
     
 }
