@@ -39,7 +39,7 @@ footer {
     text-align: justify;
 }
 
-.content h2:first-child {
+.content first-child {
     margin-top: 0px;
 }
 
