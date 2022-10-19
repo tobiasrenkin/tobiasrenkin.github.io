@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Tobias Renkin's Website</title>
+	<meta name="author" content="Tobias Renkin">
+	<meta name="description" content="I am a Research Economist at Danmarks Nationalbank. I work on topics in empirical Macroeconomics and Labor Economics." /> 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="Tobias, Renkin, economics, Danmarks Nationalbank, University of Zurich, Copenhagen, Zurich" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://www.tobiasrenkin.com/">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- Jinja templates -->
+
+{~ macro multilinelist(list) ~}
+  {~ for item in list ~}
+    {+ item +}<br>
+  {~ endfor ~}
+{~ endmacro ~}
+
+{~ macro onelinelist(list, separator) ~}
+  {~ for item in list ~}{+ item +}{+separator if not loop.last else ""+} {~ endfor ~}
+{~ endmacro ~}
+
+{~ macro paperlist(list, media=false, abstract=false) ~}
+  {~ for item in list ~}
+    {~ if item.link ~}<a href="{+item.link+}" target="_blank">{+item.title+}</a>{~ else ~}{+ item.title +}{~ endif ~}
+    {~- if "coauthors" in item -~}
+      , with 
+      {~- for author in item.coauthors -~}
+        {~- if not loop.first -~}{+ ", " if not loop.last else " and " +}{~ endif ~}
+        {~ if author.link -~}<a href="{+author.link+}" target="_blank">{+author.name+}</a>{~- else -~}{+ author.name +}{~- endif -~}
+      {~- endfor -~}
+    {~- endif -~}
+    {+ "." if item.title[-1] not in ["?", ".", "!"] +}
+    {~ if item.citation -~}
+      {+item.citation.journal+} ({+item.citation.year+}), Issue {+item.citation.issue+}, Vol. {+item.citation.volume+}, pp. {+item.citation.pages+}.
+    {~ else -~}
+      {~if item.year~}{+ item.year +}.{~endif~}
+      {~if item.status~}{+ item.status +}.{~endif~}
+    {~ endif ~}
+   	{~ if abstract==true and item.abstract -~}
+		<p style="padding-left:20px;padding-right:20px;">{+ item.abstract +}</p>
+	{~ endif ~}
+   	{~ if media==true and item.Media -~}
+   		</p> Media: 
+   		{~- for article in item.Media ~}
+			<a href="{+article.link+}" target="_blank">{+article.name+}</a>{+", " if not loop.last+}
+		{~- endfor -~}
+	{~ endif ~}
+	</p>
+  {~ endfor ~}
+{~ endmacro ~}
+
+<!-- End Jinja templates -->
+
+<body>
+
+<header>
+ 	<h1>Tobias Renkin</h1>
+</header>
+
+<main>
+	<div class="left">
+		<img src='DSC_3434_small.webp' alt='Portrait Tobias Renkin' class="portrait">
+
+		<h2>CV</h2>
+		
+		<a href='https://github.com/tobiasrenkin/tobiasrenkin.github.io/raw/master/CV.pdf'>PDF here</a>
+
+		<h2>Contact</h2>
+
+		{+ multilinelist(data.Contact.Address) +}
+		<a href='mailto:{+ data.Contact.Email +}'>{+ data.Contact.Email +}</a>
+		
+	</div>
+
+	<div class="content">
+
+		<h2>Publications</h2>
+
+		{+ paperlist(data.Publications, abstract=true, media=true) +}
+
+		<h2>Working Papers</h2>
+
+		{+ paperlist(data["Working Papers"], abstract=true, media=true) +}
+
+		<h2>Work in Progress</h2>
+
+		{+ paperlist(data["Work in Progress"]) +}
+
+		<h2>Policy Publications</h2>
+
+		{+ paperlist(data["Policy Publications"], media=true) +}
+
+	</div>
+</main>
+
+<footer>
+	Disclaimer: Materials on this website are personal and do not reflect the positions of Danmarks Nationalbank.
+</footer>
+
+
+
+</body>
+</html>
