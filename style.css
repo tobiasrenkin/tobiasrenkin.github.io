@@ -5,60 +5,58 @@
 body {
     font-size: 18px;
     font-family: sans-serif;
-    line-height: 1.66;
     margin: 0;
+    line-height: 1.5;
 }
 
 main, header, footer {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     overflow: auto;
 }
 
 header {
+    padding: 20px;
     border-bottom: 4px double;
 }
 
 footer {
     text-align: center;
     border-top: 4px double;
-    padding: 0.5em;
-}
-
-aside {
-    float: left;
-    width: 20%;
     padding: 20px;
 }
 
-.content {   
+.left {
+    float: left;
+    width: 22%;
+    padding: 20px;
+}
+
+.content {
     float: right;
-    width: 80%;
+    width: 78%;
     padding: 20px;
     text-align: justify;
+}
+
+.content h2:first-child {
+    margin-top: 0px;
 }
 
 h1 { 
     font-weight: normal;
     font-size: 250%;
-    margin: 5px 20px 5px 20px;
+    margin: 0;
 }
 
 h2 {
-    font-weight: normal;    
-}
-
-ol,ul {
-    padding: 0;
-    list-style-position: inside;
-}
-
-li  {
-    margin: 1em 0;
+    font-weight: normal;
+    font-size: 150%;
+    margin: 0.7em 0em;
 }
 
 p {
-    margin: 0.5em 0;
+    margin: 0.66em 0em;
 }
 
 .portrait {
@@ -71,7 +69,7 @@ p {
     html {
         font-size: 24px;
     }  
-    footer, header, main, aside {   
+    footer, header, main, .left {   
         width: 100%;
         text-align: center;
         padding: 2em;
@@ -87,7 +85,7 @@ p {
     }
     
     .portrait {
-        width: 50%;
+        width: 25%;
     }
     
 }
