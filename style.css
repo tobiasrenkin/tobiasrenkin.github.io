@@ -68,7 +68,7 @@ p {
     footer, header, main, .left {   
         width: 100%;
         text-align: center;
-        padding: 2em;
+        padding: 1.5em;
     }
 
     .content {
@@ -80,7 +80,7 @@ p {
     }
     
     .portrait {
-        width: 25%;
+        width: 33%;
     }
     
 }
