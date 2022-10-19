@@ -3,10 +3,9 @@
 }
 
 body {
-    font-size: 18px;
     font-family: sans-serif;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.5em;
 }
 
 main, header, footer {
@@ -45,18 +44,18 @@ footer {
 
 h1 { 
     font-weight: normal;
-    font-size: 250%;
+    font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
     font-weight: normal;
-    font-size: 150%;
+    font-size: 1.5em;
     margin: 0.7em 0em;
 }
 
 p {
-    margin: 0.66em 0em;
+    margin: 0.7em 0em;
 }
 
 .portrait {
@@ -66,9 +65,6 @@ p {
 
 /* Mobile view: when the screen is less than 1200px wide, make the columns stack on top of each other  */
 @media screen and (max-width: 1200px) {
-    body {
-        font-size: 36px;
-    }  
     footer, header, main, .left {   
         width: 100%;
         text-align: center;
