@@ -16,7 +16,7 @@ main, header, footer {
 }
 
 header {
-    padding: 1em;
+    padding: 1.5em 1em;
     border-bottom: 4px double;
 }
 
@@ -29,18 +29,14 @@ footer {
 .left {
     float: left;
     width: 22%;
-    padding: 1em;
+    padding: 1.5em 1em;
 }
 
 .content {
     float: right;
     width: 78%;
-    padding: 1em;
+    padding: 1.5em 1em;
     text-align: justify;
-}
-
-.content first-child {
-    margin-top: 0px;
 }
 
 h1 { 
@@ -51,7 +47,6 @@ h1 {
 
 h2 {
     font-weight: normal;
-    font-size: 1.5em;
 }
 
 p {
