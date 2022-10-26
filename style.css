@@ -17,12 +17,12 @@ main, header, footer {
 
 header {
     padding: 1.5em 1em;
-    border-bottom: 4px double;
+    border-bottom: 4px double green;
 }
 
 footer {
     text-align: center;
-    border-top: 4px double;
+    border-top: 4px double green;
     padding: 1em;
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .portrait {
-    border: 1px solid;
+    border: 1px solid green;
     width: 100%;
 }
 
