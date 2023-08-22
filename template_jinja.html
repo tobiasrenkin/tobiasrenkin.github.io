@@ -42,14 +42,14 @@
       {~if item.status~}{+ item.status +}.{~endif~}
     {~ endif ~}
    	{~ if abstract==true and item.abstract -~}
-			<p style="margin-left:5px">Abstract: {+ item.abstract +}</p>
+			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
 		{~ endif ~}
    	{~ if media==true and item.Media -~}
-   		<p style="margin-left:5px"> Media: 
+   		<p style="margin-left:6px"> Coverage: 
    		{~- for article in item.Media ~}
 				<a href="{+article.link+}" target="_blank">{+article.name+}</a>{+", " if not loop.last+}
 			{~- endfor -~}
-		</p>
+			</p>
 		{~ endif ~}
 	</p>
   {~ endfor ~}

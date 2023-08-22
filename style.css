@@ -17,11 +17,11 @@ main, header, footer {
 
 header {
     padding: 1.5em 1em;
-    border-bottom: 4px double green;
+    border-bottom: 4px double grey;
 }
 
 footer {
-    border-top: 4px double green;
+    border-top: 4px double grey;
     padding: 1.5em 1em;
     text-align: center;
 }
@@ -54,7 +54,7 @@ p {
 }
 
 .portrait {
-    border: 1px solid green;
+    border: 1px solid grey;
     width: 100%;
 }
 
