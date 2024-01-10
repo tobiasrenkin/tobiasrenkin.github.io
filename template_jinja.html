@@ -26,7 +26,7 @@
 
 {~ macro paperlist(list, media=false, abstract=false) ~}
   {~ for item in list ~}
-    {~ if item.link ~}<a href="{+item.link+}" target="_blank">{+item.title+}</a>{~ else ~}{+ item.title +}{~ endif ~}
+    {~ if item.link ~}<a href="{+item.link+}" target="_blank"><b>{+item.title+}</b></a>{~ else ~}{+ item.title +}{~ endif ~}
     {~- if "coauthors" in item -~}
       , with 
       {~- for author in item.coauthors -~}
@@ -36,7 +36,7 @@
     {~- endif -~}
     {+ "." if item.title[-1] not in ["?", ".", "!"] +}
     {~ if item.citation -~}
-      {+item.citation.journal+} ({+item.citation.year+}), Issue {+item.citation.issue+}, Vol. {+item.citation.volume+}, pp. {+item.citation.pages+}.
+      <b>{+item.citation.journal+}</b> ({+item.citation.year+}), Issue {+item.citation.issue+}, Vol. {+item.citation.volume+}, pp. {+item.citation.pages+}.
     {~ else -~}
       {~if item.year~}{+ item.year +}.{~endif~}
       {~if item.status~}{+ item.status +}{~endif~}
