@@ -39,7 +39,8 @@
       {+item.citation.journal+} ({+item.citation.year+}), Issue {+item.citation.issue+}, Vol. {+item.citation.volume+}, pp. {+item.citation.pages+}.
     {~ else -~}
       {~if item.year~}{+ item.year +}.{~endif~}
-      {~if item.status~}{+ item.status +}.{~endif~}
+      {~if item.status~}{+ item.status +}{~endif~}
+      {~if item.journal~}at <b>{+ item.journal +}</b>{~endif~}
     {~ endif ~}
    	{~ if abstract==true and item.abstract -~}
 			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
