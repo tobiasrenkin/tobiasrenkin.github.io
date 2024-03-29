@@ -36,7 +36,7 @@
     {~- endif -~}
     {+ "." if item.title[-1] not in ["?", ".", "!"] +}
     {~ if item.citation -~}
-      <b>{+item.citation.journal+}</b> ({+item.citation.year+}), Issue {+item.citation.issue+}, Vol. {+item.citation.volume+}, pp. {+item.citation.pages+}.
+      <b>{+item.citation.journal+}</b> ({+item.citation.year+}), Vol. {+item.citation.volume+}, No. {+item.citation.issue+}, pp. {+item.citation.pages+}.
     {~ else -~}
       {~if item.year~}{+ item.year +}.{~endif~}
       {~if item.status~}{+ item.status +}{~endif~}
