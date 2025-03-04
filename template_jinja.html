@@ -76,10 +76,6 @@
 
 		{+ multilinelist(data.Contact.Address) +}
 		<a href='mailto:{+ data.Contact.Email +}'>{+ data.Contact.Email +}</a>
-		
-		</p>
-
-		<a href='https://scholar.google.com/citations?user=FKIjBUEAAAAJ'>Google Scholar</a>
 
 	</div>
 
@@ -93,7 +89,7 @@
 
 		<h2>Publications</h2>
 
-		{+ paperlist(data.Publications, abstract=true, media=true) +}
+		{+ paperlist(data.Publications, abstract=false, media=true) +}
 
 		<h2>Working Papers</h2>
 
