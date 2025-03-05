@@ -42,17 +42,17 @@
       {~if item.status~}{+ item.status +}{~endif~}
       {~if item.journal~}at <b>{+ item.journal +}</b>{~endif~}
     {~ endif ~}
-   	{~ if abstract==true and item.abstract -~}
-			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
-		{~ endif ~}
-   	{~ if media==true and item.Media -~}
-   		<p style="margin-left:6px"> Coverage: 
+    {~ if media==true and item.Media -~}
+   		[Media coverage: 
    		{~- for article in item.Media ~}
 				<a href="{+article.link+}" target="_blank">{+article.name+}</a>{+", " if not loop.last+}
 			{~- endfor -~}
-			</p>
+			]
 		{~ endif ~}
-	</p>
+   	{~ if abstract==true and item.abstract -~}
+			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
+		{~ endif ~}
+   	</p>
   {~ endfor ~}
 {~ endmacro ~}
 
