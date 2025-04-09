@@ -13,16 +13,15 @@ main, header, footer {
     max-width: 1200px;
     margin: auto;
     overflow: auto;
+    padding: 1.5em 1em;
 }
 
 header {
-    padding: 1.5em 1em;
     border-bottom: 4px double grey;
 }
 
 footer {
     border-top: 4px double grey;
-    padding: 1.5em 1em;
     text-align: center;
 }
 
