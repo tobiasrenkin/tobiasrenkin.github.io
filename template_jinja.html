@@ -52,7 +52,9 @@
 		{~ endif ~}
 		</p>
    	{~ if abstract==true and item.abstract -~}
-			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
+   		<details><summary>Abstract</summary>
+			<p style="margin-left:6px">{+ item.abstract +}</p>
+			</details>
 		{~ endif ~}
    {~ endfor ~}
 {~ endmacro ~}
