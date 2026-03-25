@@ -24,7 +24,7 @@
   {~ for item in list ~}{+ item +}{+separator if not loop.last else ""+} {~ endfor ~}
 {~ endmacro ~}
 
-{~ macro paperlist(list, media=false, abstract=false) ~}
+{~ macro paperlist(list, media=false, abstract=false, notes=false) ~}
   {~ for item in list ~}
   	<p>
     {~ if item.link ~}<a href="{+item.link+}" target="_blank"><b>{+item.title+}</b></a>{~ else ~}{+ item.title +}{~ endif ~}
@@ -43,16 +43,19 @@
       {~if item.status~}{+ item.status +}{~endif~}
       {~if item.journal~}<b>{+ item.journal +}</b>{~endif~}
     {~ endif ~}
-    {~ if media==true and item.Media -~}
+    {~ if media==true and item.media -~}
    		[Media coverage: 
-   		{~- for article in item.Media ~}
+   		{~- for article in item.media ~}
 				<a href="{+article.link+}" target="_blank">{+article.name+}</a>{+", " if not loop.last+}
 			{~- endfor -~}
 			]
 		{~ endif ~}
 		</p>
+		{~ if notes==true and item.notes -~}
+   		<p style="margin-left:8px">{+ item.notes +}</p>
+		{~ endif ~}
    	{~ if abstract==true and item.abstract -~}
-			<p style="margin-left:6px">Abstract: {+ item.abstract +}</p>
+			<p style="margin-left:8px">Abstract: {+ item.abstract +}</p>
 		{~ endif ~}
    {~ endfor ~}
 {~ endmacro ~}
