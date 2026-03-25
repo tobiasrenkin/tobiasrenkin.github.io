@@ -27,7 +27,7 @@
 {~ macro paperlist(list, media=false, abstract=false, notes=false) ~}
   {~ for item in list ~}
   	<p>
-    {~ if item.link ~}<a href="{+item.link+}" target="_blank"><b>{+item.title+}</b></a>{~ else ~}{+ item.title +}{~ endif ~}
+    {~ if item.link ~}<a href="{+item.link+}" target="_blank"><b>{+item.title+}</b></a>{~ else ~}<b>{+ item.title +}</b>{~ endif ~}
     {~- if "coauthors" in item -~}
       , with 
       {~- for author in item.coauthors -~}
